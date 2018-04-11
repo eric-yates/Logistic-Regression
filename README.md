@@ -18,6 +18,7 @@ These Python packages are also needed:
 
 * numpy
 * matplotlib
+* pandas
 
 
 ### Installing
@@ -29,6 +30,7 @@ By default, Python should come with pip (a package manager). Use it to install t
 ```
 pip install numpy
 pip install matplotlib
+pip install pandas
 ```
 
 ## Usage
@@ -45,7 +47,7 @@ done prior to creating a model.
 ### Advanced
 
 1) Create a new Python script
-2) Save it in the same folder as the 'logistic_regression.py' file
+2) Save it in the cloned/forked folder
 2) Use a format similar to the following:
 ```     
 from logistic_regression import LogisticRegression
@@ -57,8 +59,8 @@ model = LinearRegression(X=X,
                          T=T,
                          epochs=1000,
                          learn_rate=0.001,
-                         reg_L1=0,
-                         reg_L2=0)
+                         reg_L1=0, # Lasso regularization coefficient
+                         reg_L2=0) # Ridge regularization coefficient
 
 for i in xrange(model.epochs):
             

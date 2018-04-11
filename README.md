@@ -52,8 +52,8 @@ done prior to creating a model.
 ```     
 from logistic_regression import LogisticRegression
 
-X = ...
-T = ...
+X = ...   # input data
+T = ...   # target data
 
 model = LinearRegression(X=X,
                          T=T,
